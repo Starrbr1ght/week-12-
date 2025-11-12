@@ -22,7 +22,17 @@ print(1 < x < 20)         # True
 # Practice Problems:
 
 # Write an expression that checks if a number is between 50 and 100 (inclusive).
+y = 20 
+print(y > 50 and y< 100) #falses
+print(not(y==0 and y >10))
 
+password = input("what is your password?")
+if len(password) >= any(char.isdigit() for char in password):
+    print("password is valid")
+else:
+    print("password is invalid." \
+    "it musct be atleast 8 characters long and contain atleast one digit")
+# The password must be at least 8 characters long and contain at least one digit.password = "mypassword1"
 # Write an expression that checks if a number is NOT equal to 0 and greater than 10.
 
 # Use chained comparison to check if 3 < 4 < 5.
