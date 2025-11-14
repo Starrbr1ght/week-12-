@@ -62,36 +62,58 @@ print(my_list)
 # .remove() - removes the first occurence of a specific value
 # .sort() -sorts the list in ascending order
 # .reverse() - reverses the order of the list
-
-
+#why is a list more important than a vbariable?
+#a list can hold multiple values,
+# while a variable can hold only one value at a time
+cakes= [ 'chocolate' , 'vanilla', 'red velvet', 'carrot']
+print(cakes)
+#access the first item
+print(cakes[0]) #chocolate
+#access the last item
+print(cakes[-1]) #carrot
+#want two chocolate instead of vanilla
+cakes[0] = 'strawberry'
+print(cakes)
+cakes[1] = 'chocolate'
+print(cakes)
+#remove the last cake
+cakes.pop()
+print(cakes)
+#insert a new cake at index 2
+cakes.insert(2, 'funfetti')
+print(cakes)
 
 # Examples:
 
-# my_list = ['apple', 'banana', 'cherry']
-# print(my_list[0])         # apple
-# print(my_list[1:])        # ['banana', 'cherry']
+my_list = ['apple', 'banana', 'cherry']
+print(my_list[0])         # apple
+print(my_list[1:])        # ['banana', 'cherry']
 
-# my_list.append('grape')
-# print(my_list)
+my_list.append('grape')
+print(my_list)
 
-# my_list.pop(1)
-# print(my_list)
+my_list.pop(1)
+print(my_list)
 
-# numbers = [3, 1, 4, 2]
-# numbers.sort()
-# print(numbers)
+numbers = [3, 1, 4, 2]
+numbers.sort()
+print(numbers)
 
 
-# # Practice Problems:
+# Practice Problems:
 
-# # Create a list with 5 of your favorite foods.
-
-# # Print the second and last item.
-
-# # Add a new item using .append().
-
-# # Remove the first item using .pop(0).
-
-# # Reverse your list using .reverse().
-
-# # Create a list of 3 lists (matrix), and access the middle element.
+# Create a list with 5 of your favorite foods.
+fav_food = [ 'french fries', 'mac and cheese', 'cookie', 'chicken sandwich', 'pickles']
+# Print the second and last item.
+print(fav_food[0])
+print(fav_food[4])
+# Add a new item using .append().
+fav_food.append('wings')
+print(fav_food)
+# Remove the first item using .pop(0).
+fav_food.pop(0)
+print(fav_food)
+# Reverse your list using .reverse().
+fav_food.reverse()
+print(fav_food)
+# Create a list of 3 lists (matrix), and access the middle element.
