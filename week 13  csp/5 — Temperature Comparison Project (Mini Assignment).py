@@ -11,4 +11,16 @@
 # If the temperature is out of range (below -10 or above 110), display “Extreme temperature warning!”
 
 # Starter Code:
+#
+#     print("not reliable data")
 
+temp = int(input("What is the temperature today? "))
+
+if temp >= -10 and temp <= 50:
+    print("Ahh, it's cold!!")
+elif temp >= 51 and temp <= 71:
+    print("It's warm outside")
+elif temp > 71 and temp <= 110:
+    print("It's hot")
+else:
+    print("Not reliable data")
